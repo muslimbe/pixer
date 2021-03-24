@@ -1,0 +1,587 @@
+@font-face{
+  font-family: "open sans";
+
+  src: url("./../fonts/OpenSans-Regular.woff") format("woff"),
+  url("./../fonts/OpenSans-Regular.woff2") format("woff2");
+  
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+font-family: "open sans";
+
+  src: url("./../fonts/OpenSans-Bold.woff") format("woff"),
+  url("./../fonts/OpenSans-Bold.woff2") format("woff2");
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "open sans";
+  padding-top: 56px;
+}
+ 
+/*                HEADER                  */
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.pixer_logo_link{
+  margin-right: auto;
+}
+
+.pixer_logo:hover{
+  opacity: 0.8;
+}
+
+.header_nav{
+  display: block;
+}
+
+.header_nav_list{
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  list-style: none;
+}
+
+.header_nav_item{
+  position: relative;
+}
+
+.header_nav_link{
+  padding: 18px 16px 15px;
+  text-decoration: none;
+  color: #000;
+  line-height: 56px;
+  font-size: 15px;
+  border-bottom: 3px solid transparent;
+}
+
+.header_nav_item:hover .header_nav_link{
+  border-bottom: 3px solid #000;
+}
+
+.header_nav_link:active{
+  color: #fff;
+  background-color: #191919;
+  opacity: 0.7;
+}
+
+.nav_xizmatlar:hover .dropdown_list{
+  display: block;
+}
+
+
+
+.dropdown_list{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 132px;
+  top: 100%;
+  left: 0;
+
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown_item{
+  padding-left: 16px;
+}
+
+.dropdown_link{
+  text-decoration: none;
+  line-height: 40px;
+  color: #000;
+  font-weight: 400;
+}
+
+.dropdown_item:hover{
+  color: #fff;
+  background-color: #00BAFC;
+}
+
+.dropdown_item:active{
+  background-color: #00BAFC;
+  opacity: 0.6;
+}
+
+
+
+.phone_number{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 7px 14px;
+  background-color: #00BAFC;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.phone_number:hover{
+  color:#00BAFC;
+  background-color: #fff;
+  border: 3px solid #00BAFC ;
+}
+
+.phone_number:active{
+  color: #fff;
+  background-color: #00BAFC;
+  opacity: 0.6;
+}
+
+/*      BISZNESINGIZNI ..... . */
+
+.biznes_keyingi_bosqich{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.keyingi_bosqich{
+  display: flex;
+  flex-wrap: wrap;
+  width: 470px;
+  height: 224px;
+  margin-right: auto;
+}
+
+.keyingi_bosqich_title{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.keyingi_bosqich_text{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+.keyingi_bosqich_link:hover{
+  opacity: 0.8;
+}
+
+.keyingi_bosqich_link:active{
+  opacity: 0.6;
+}
+
+.keyingi_bosqich_link{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #00BAFC;
+  border-radius: 5px;
+}
+
+.ytb_video{
+  margin-bottom: 80px ;
+}
+
+/*         XIZMATLAR        */
+
+
+.xizmatlar_title{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 56px auto 0;
+  text-align: center;
+}
+
+.xizmatlar_text{
+  width: 719px;
+  line-height: 24px;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.xizmatlar_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.xizmatlar_item{
+  list-style: none;
+  width: 320px;
+  height: 260px;
+  margin-right: 70px;
+
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.xizmatlar_item:hover{
+  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+
+.xizmatlar_item:active{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.xizmatlar_item:nth-child(3n){
+  margin-right: 0;
+  margin-bottom: 48px;
+}
+
+.xizmatlar_item:last-child{
+  margin-right: 0;
+}
+
+.xizmatlar_img{
+  display: flex;
+  margin: 24px auto 0;
+}
+
+.xizmatlar_item_text{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.xizmatlar_item_text2{
+  text-align: center;
+}
+
+.xizmatlar_links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 56px 0;
+}
+
+.xizmatlar_link_buyurtma{
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #00BAFC;
+  border-radius: 5px;
+}
+
+.xizmatlar_link_buyurtma:hover{
+  opacity: 0.8;
+}
+
+.xizmatlar_link_buyurtma:active{
+  opacity: 0.6;
+}
+
+
+
+.xizmatlar_link_otish{
+  color: #00BAFC;
+  margin-left: 16px;
+}
+
+.xizmatlar_link_otish:hover{
+  opacity: 0.8;
+}
+
+.xizmatlar_link_otish:active{
+  opacity: 0.6;
+}
+
+/*      Biz Qanday Ishlaymiz      */
+
+.qanday_ishlaymiz_title{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 56px auto 16px;
+  text-align: center;
+}
+.qanday_ishlaymiz_text{
+  width: 719px;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+
+.qanday_ishlaymiz_list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qanday_ishlaymiz_item{
+  display: flex;
+  align-items: center;
+  width: 832px;
+  margin-bottom: 48px;
+  margin: 0 auto;
+}
+
+.qanday_ishlaymiz_item:last-child{
+  margin-bottom: 0;
+}
+
+.qanday_item_both{
+  width: 500px;
+}
+
+.qanday_item_text{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.qanday_ishlaymiz_img{
+  margin-right: 32px;
+}
+
+.img_margin_left{
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+
+/* .qanday_ishlaymiz_list:nth-child(2n) img {
+  margin-right: 0;
+  margin-left: 32px;
+} */
+
+.qanday_ishlaymiz_button{
+  display: flex;
+  width: 167px;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  margin: 40px auto 56px;
+}
+
+.qanday_ishlaymiz_button:hover{
+  opacity: 0.8;
+}
+
+.qanday_ishlaymiz_button:active{
+  opacity: 0.6;
+}
+
+/*    Buyurtma berish             */
+
+.buyurtma_berish{
+  background-color: #00BAFC;
+}
+
+.buyurtma_berish_contain{
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buyurtma_title{
+  font-size: 24px;
+  font-weight: 700;
+  margin: 56px auto 16px;
+}
+
+.buyurtma_text{
+  width: 719px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form{
+  justify-content: center;
+  background-color: #fff;
+  margin: 24px auto 64px;
+  padding: 24px 24px;
+  border-radius: 5px;
+}
+
+.input{
+  display: block;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20.5px 59.5px 20.5px 16px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.visually_hidden_span{
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+#select{
+  /* padding: 19.5px 65.5px; */
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 5px;
+}
+
+.buyurtma_button{
+  display: block;
+  color: #fff;
+  background-color: #00BAFC;
+  width: 167px;
+  height: 40px;
+  margin: 16px auto 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.buyurtma_button:hover{
+  opacity: 0.8;
+}
+
+.buyurtma_button:active{
+  opacity: 0.6;
+}
+
+/*       Footer           */
+
+footer{
+  color: #fff;
+  background-color: #191919;
+}
+
+.footer_inside_container{
+  display: flex;
+  padding: 56px 0 56px 100px;
+}
+
+
+.copyright_2020{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.copyright_text{
+  width: 320px;
+  height: 120px;
+}
+
+.sayt_sahifalari{
+  margin: 0 100px;
+}
+
+.sahifalar_title{
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.sahifalar_item{
+  list-style: none;
+  line-height: 30px;
+}
+
+.sahifalar_link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.sahifalar_link:hover{
+  color: #00bafc;
+}
+
+.sahifalar_link:active{
+  color: #00bafc;
+  opacity: 0.6;
+}
+
+.internetda_title{
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.internetda_item{
+  position: relative;
+  list-style: none;
+  line-height: 30px;
+}
+
+.internet_link{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.internet_link:hover{
+  color: #00BAFC;
+}
+
+.internet_link:active{
+  opacity: 0.6;
+}
+
+.telegram::before{
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 24px;
+  background: url(../img/footer/Telegram.svg);
+  
+}
+
+.facebook::before{
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 24px;
+  background: url(../img/footer/facebook.svg);
+}
+
+.instagram::before{
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 21px;
+  background: url(../img/footer/instagram.svg)
+}
